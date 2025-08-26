@@ -1,22 +1,31 @@
-import logo from './logo.svg';
+
+import React, { useState } from 'react';
 import './App.css';
+import CompInicial from './CompFuncionales/CompInicial/CompInicial';
+import CompDatosPersonales from './CompFuncionales/CompDatosPersonales/CompDatosPersonales';
+import CompContactos from './CompFuncionales/CompContactos/CompContactos';
 
 function App() {
+  const [opcion, setOpcion] = useState("perfil");
+  const [contacto, setContacto] = useState([]);
+  const cambiarOpcion = () => {
+    setOpcion((prev) => (prev === "perfil" ? "contactos" : "perfil"));
+  };
   return (
-    <div className="App">
+   <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="columnas">
+          <div className="columna">
+            <CompInicial opcion={opcion} cambiarOpcion={cambiarOpcion} />
+            {opcion==="perfil" ? <div className="columna">
+            <CompDatosPersonales /> 
+          </div> : <div >
+            <CompContactos contacto={contacto} setContacto={setContacto} />
+          </div>}
+          </div>
+          
+          
+        </div>
       </header>
     </div>
   );

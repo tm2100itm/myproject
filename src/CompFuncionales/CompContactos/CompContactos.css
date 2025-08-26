@@ -1,0 +1,47 @@
+.container {
+  padding: 20px;
+}
+
+.form input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.form button {
+  padding: 5px 10px;
+}
+
+.search {
+  margin: 10px 0;
+  padding: 5px;
+  width: 100%;
+}
+
+.tabla-contactos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: aqua;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+
+
+ .btn {
+  background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
