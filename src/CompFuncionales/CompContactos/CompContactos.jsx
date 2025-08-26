@@ -71,16 +71,25 @@ function CompContactos({ contacto, setContacto }) {
           </tr>
         </thead>
         <tbody>
-  {filtered.map(c => (
-    <tr key={c.id}>
-      <td>{c.nombre}</td>
-      <td>{c.correo}</td>
-      <td>{c.telefono}</td>
-      <td>
-        <button className="btn" onClick={() => eliminarContacto(c.id)}>Eliminar</button>
-      </td>
-    </tr>
-  ))}
+          
+    {filtered.length === 0 ? (
+            <tr>
+              <td colSpan="4" style={{ textAlign: 'center', padding: '1rem' }}>
+                No hay contactos registrados o no hay coincidencias.
+              </td>
+            </tr>
+          ) : (
+            filtered.map(c => (
+              <tr key={c.id}>
+                <td>{c.nombre}</td>
+                <td>{c.correo}</td>
+                <td>{c.telefono}</td>
+                <td>
+                  <button className="btn" onClick={() => eliminarContacto(c.id)}>Eliminar</button>
+                </td>
+              </tr>
+            ))
+          )}
 </tbody>
 
       </table>
