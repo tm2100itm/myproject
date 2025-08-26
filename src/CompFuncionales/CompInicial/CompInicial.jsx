@@ -11,7 +11,7 @@ function CompInicial({opcion,cambiarOpcion}) {
 
   return (
     <div>
-      <h1>Elija lo que desea visualizar</h1>
+      <h1 className="h1">Elija lo que desea visualizar</h1>
       <button className="btn-inicial" onClick={cambiarOpcion}>
         {opcion === "perfil" ? "Contactos" : "Perfil"}
       </button>

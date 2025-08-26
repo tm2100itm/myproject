@@ -28,7 +28,7 @@ function CompContactos({ contacto, setContacto }) {
 
   return (
     <div>
-      <h2>📇 Contactos</h2>
+      <h2 className="h2">📇 Contactos</h2>
 
       <form onSubmit={agregarContacto} >
         <input

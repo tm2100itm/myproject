@@ -1,0 +1,20 @@
+/* PersonajeFavorito.css */
+.personaje-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  background: #221be3;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(244, 241, 241, 0.2);
+}
+
+.personaje-img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}

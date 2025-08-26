@@ -8,7 +8,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 1px;
-  box-shadow: 0 4px 14px rgba(0, 123, 255, 0.2);
+  box-shadow: 0 4px 14px rgba(14, 150, 52, 0.2);
   cursor: pointer;
  /* transition: background 0.3s, transform 0.2s;*/
   margin: 10px;
@@ -17,5 +17,10 @@
 .btn-inicial:hover {
   background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
   transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.25);
+  box-shadow: 0 6px 20px rgba(12, 14, 16, 0.25);
+}
+.h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #25608e;
 }

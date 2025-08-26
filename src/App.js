@@ -4,6 +4,8 @@ import './App.css';
 import CompInicial from './CompFuncionales/CompInicial/CompInicial';
 import CompDatosPersonales from './CompFuncionales/CompDatosPersonales/CompDatosPersonales';
 import CompContactos from './CompFuncionales/CompContactos/CompContactos';
+import CompPersonajeFavorito from './CompFuncionales/CompPersonajeFavorito/CompPersonajeFavorito';
+
 
 function App() {
   const [opcion, setOpcion] = useState("perfil");
@@ -18,7 +20,9 @@ function App() {
           <div className="columna">
             <CompInicial opcion={opcion} cambiarOpcion={cambiarOpcion} />
             {opcion==="perfil" ? <div className="columna">
-            <CompDatosPersonales /> 
+
+            <CompDatosPersonales />
+            <CompPersonajeFavorito />
           </div> : <div >
             <CompContactos contacto={contacto} setContacto={setContacto} />
           </div>}
