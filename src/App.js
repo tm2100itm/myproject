@@ -14,21 +14,22 @@ function App() {
     setOpcion((prev) => (prev === "perfil" ? "contactos" : "perfil"));
   };
   return (
-   <div className="App">
+    <div className="App">
       <header className="App-header">
+        <h1 className="h1">Proyecto final del curso Introducción a React</h1>
         <div className="columnas">
           <div className="columna">
             <CompInicial opcion={opcion} cambiarOpcion={cambiarOpcion} />
-            {opcion==="perfil" ? <div className="columna">
+            {opcion === "perfil" ? <div className="columna">
 
-            <CompDatosPersonales />
-            <CompPersonajeFavorito />
-          </div> : <div >
-            <CompContactos contacto={contacto} setContacto={setContacto} />
-          </div>}
+              <CompDatosPersonales />
+              <CompPersonajeFavorito />
+            </div> : <div >
+              <CompContactos contacto={contacto} setContacto={setContacto} />
+            </div>}
           </div>
-          
-          
+
+
         </div>
       </header>
     </div>

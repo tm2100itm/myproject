@@ -8,7 +8,7 @@ function CompPersonajeFavorito() {
   return (
     <div className="perfil-container">
       <h2>Mi Personaje Favorito</h2>
-      <p>Creo que no tengo personaje favorito. Pero recuerdo personajes de la infancia que aún me gustan</p>
+      <p>Me recuerda mi infancia</p>
       <div className="card">
         <img 
           src="./Candy.jpg" 
